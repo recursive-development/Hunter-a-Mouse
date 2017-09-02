@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd93371e-f936-4b93-b139-6bf7515abfdf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hunter-a-Mouse.iml" afterPath="$PROJECT_DIR$/Hunter-a-Mouse.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,9 +18,13 @@
       <file leaf-file-name="GameApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#GameApp#0" expanded="false" />
+                <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,20 +88,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Hunter-a-Mouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hunter-a-Mouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hunter-a-Mouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -305,9 +293,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#GameApp#0" expanded="false" />
+            <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
