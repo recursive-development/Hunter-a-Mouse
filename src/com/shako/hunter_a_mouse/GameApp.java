@@ -2,6 +2,8 @@ package com.shako.hunter_a_mouse;
 
  import com.badlogic.gdx.Game;
  import com.badlogic.gdx.Gdx;
+ import com.badlogic.gdx.Input;
+ import com.badlogic.gdx.graphics.GL20;
  import com.badlogic.gdx.graphics.Texture;
  import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
@@ -26,7 +28,9 @@ public class GameApp extends Game{
     /** */
     private float
             mouseX,
-            mouseY;
+            mouseY,
+            cheeseX,
+            cheeseY;
 
     /** */
     private boolean win;
@@ -50,25 +54,47 @@ public class GameApp extends Game{
         mouseTexture = new Texture(Gdx.files.internal("assets/mouse.png"));
         cheeseTexture = new Texture(Gdx.files.internal("assets/cheese01.png"));
         floorTexture = new Texture(Gdx.files.internal("assets/floor.png"));
-        winMessage   = new Texture(Gdx.files.internal());
+        winMessage   = new Texture(Gdx.files.internal("assets/winner.png"));
 
         mouseX       = 20;
         mouseY       = 20;
+        cheeseX      = 400;
+        cheeseY      = 300;
+
 
     } // create()
-
 
     @Override
     public void render() {
         super.render();
 
+        // Перемещение героя игры.
+        //
+        if (Gdx.input.isKeyPressed(Input.Keys.UP))    mouseY--;
+        if (Gdx.input.isKeyPressed(Input.Keys.DOWN))  mouseY++;
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT))  mouseX--;
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) mouseX++;
 
+        // Непонятное условие ...
         //
+        if (mouseX > cheeseX && ( mouseY > cheeseY )
+                && ( mouseX + mouseTexture.getWidth()  < cheeseX + cheeseTexture.getWidth() )
+                && ( mouseY + mouseTexture.getHeight() < cheeseY + cheeseTexture.getHeight() ))
+            win = true;
+
+        // Очиста экрана и рисование графики.
         //
+        Gdx.gl.glClearColor(0.8f, 0.8f, 1.0f, 1.0f);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        // Начало отрисовки упоковщика спрайтов.
+        //
+        //-------------------------------------------
         batch.begin();
 
 
         batch.end();
+        // ------------------------------------------
 
 
 
