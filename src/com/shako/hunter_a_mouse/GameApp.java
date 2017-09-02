@@ -91,7 +91,11 @@ public class GameApp extends Game{
         //
         //-------------------------------------------
         batch.begin();
+        batch.draw(floorTexture,0, 0);
+        batch.draw(cheeseTexture, cheeseX, cheeseY);
+        batch.draw(mouseTexture,   mouseX,  mouseY);
 
+        if (win) batch.draw(winMessage, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 
         batch.end();
         // ------------------------------------------
