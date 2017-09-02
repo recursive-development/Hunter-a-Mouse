@@ -1,0 +1,73 @@
+# ENV ---------------------------------------------
+complete
+
+# ARCHIVES
+*.zip
+*.rar
+*.7z
+
+# TEXTFILES
+*.txt
+
+# WINDOWS ---------------------------------------------
+*.bat
+
+# GIT ---------------------------------------------
+.git
+.gitignore
+
+# JETBRAINS ---------------------------------------------
+.idea
+
+# CMAKE ---------------------------------------------
+CMakeFiles
+*.txt
+*.cbp
+*.cmake
+Makefile
+
+# MAVEN ---------------------------------------------
+target/classes
+target/maven-archiver
+target/maven-status
+
+# VISUAL STUDIO ---------------------------------------------
+*.sdf
+*.sln
+*.suo
+*.ilk
+*.pdb
+*.vcxproj
+*.filters
+*.log
+*.idb
+*.tlog
+*.lastbuildstate
+*.opensdf
+*.db
+
+# CODELIGHT ---------------------------------------------
+*.clang
+*.codelite
+*.workspace
+*.project
+
+# JAVA ---------------------------------------------
+*.jar
+*.war
+classes
+*.class
+
+# ANDROID ----------------------------------------------
+
+# GRADLE ---
+*.txt
+build
+gradle
+gradlew
+*.bat
+*.iml
+*.gradle
+*.properties
+*.gradlew
+*.pro
