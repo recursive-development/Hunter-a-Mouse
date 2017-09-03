@@ -5,6 +5,7 @@ package com.shako.hunter_a_mouse;
  import com.badlogic.gdx.Input;
  import com.badlogic.gdx.graphics.GL20;
  import com.badlogic.gdx.graphics.Texture;
+ import com.badlogic.gdx.graphics.g2d.Sprite;
  import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
  // --- shako ---
@@ -32,27 +33,30 @@ public class GameApp extends Game{
             winMessage;
 
     /** */
-    private float
+    private Sprite
 
-            testX,
-            testY,
-            testVelosity,
+            testSprite,
 
-            mouseX,
-            mouseY,
-            cheeseX,
-            cheeseY,
-
-            mouseVelosity;
-
+            mouseSprite,
+            cheeseSprite;
 
     /** */
     private boolean win;
 
+
+    // Первичная конфигурация игрового приложения.
+    //
+    static {
+
+        // Отмена изменения размеров окна экрана игрового приложения.
+        //
+        Gdx.graphics.setResizable(false);
+
+    }
+
     /** */
     GameApp() {
 
-        // TO-DO
 
     } // GameApp()
 
@@ -60,42 +64,10 @@ public class GameApp extends Game{
     @Override
     public void create() {
 
-        //
-        //
-        Gdx.graphics.setResizable(false);
 
-        //
-        //
         batch = new SpriteBatch();
 
-        //
-        //
-        testTexture = new Texture(Gdx.files.internal("assets/testing/test-square.png"));
-        testX         = 0.0f;
-        testY         = 0.0f;
-        testVelosity  = 5.0f;
-
-        //
-        //
-        mouseTexture  = new Texture(Gdx.files.internal("assets/mouse.png"));
-        cheeseTexture = new Texture(Gdx.files.internal("assets/testing/test-cheese01.png"));
-        floorTexture  = new Texture(Gdx.files.internal("assets/floor.png"));
         winMessage    = new Texture(Gdx.files.internal("assets/winner.png"));
-
-        //
-        //
-        mouseX        = 20.0f;
-        mouseY        = 20.0f;
-        cheeseX       = 400.0f;
-        cheeseY       = 300.0f;
-
-        mouseVelosity = 5.0f;
-
-        //
-        //
-        win           = false;
-
-
     } // create()
 
     @Override
@@ -108,21 +80,23 @@ public class GameApp extends Game{
 
         // Тестирование перемещения посредством тестовой текстуры.
         //
-        moveTestTexture();
+        //moveTestTexture();
 
         // Вывод статистики в консоль.
         //
-        showStatistics();
+        // showStatistics();
 
         // Проверяем столкновения.
         //
-        if ( detectCollusions() ) {
-            System.out.println(ANSI.GREEN + "DETECT");
-            win = true;
-        } else {
-            System.out.println(ANSI.WHITE + "GET OUT");
-            win = false;
-        }
+//        if ( detectCollusions() ) {
+//            Gdx.app.log("Collisions", ANSI.GREEN + "DETECT");
+//            win = true;
+//        } else {
+//            Gdx.app.log("Collisions", ANSI.WHITE + "DETECT");
+//            win = false;
+//        }
+
+        Gdx.app.log("Collisions", ANSI.GREEN + "DETECT");
 
 
         // Очиста экрана сплошным цветом и рисование графики при каждой отрисовке.
@@ -135,9 +109,9 @@ public class GameApp extends Game{
         //-------------------------------------------------------------------------------
         batch.begin();
         batch.draw(floorTexture,0, 0);
-        batch.draw(cheeseTexture, cheeseX, cheeseY, 100, 100);
-        batch.draw(mouseTexture,   mouseX,  mouseY, 100, 100);
-        batch.draw(testTexture, testX, testY);
+        //batch.draw(cheeseTexture, cheeseX, cheeseY, 100, 100);
+        //batch.draw(mouseTexture,   mouseX,  mouseY, 100, 100);
+        //batch.draw(testTexture, testX, testY);
 
         if (win) batch.draw(winMessage, 640 / 3 , winMessage.getWidth() / 5 );
 
