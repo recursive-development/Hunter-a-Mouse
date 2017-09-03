@@ -7,6 +7,9 @@ package com.shako.hunter_a_mouse;
  import com.badlogic.gdx.graphics.Texture;
  import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+ // --- shako ---
+ import com.shako.jcli.ANSI;
+
 /**
  *
  * @author Timur Kashapov aka shako.
@@ -75,7 +78,7 @@ public class GameApp extends Game{
         //
         //
         mouseTexture  = new Texture(Gdx.files.internal("assets/mouse.png"));
-        cheeseTexture = new Texture(Gdx.files.internal("assets/cheese01.png"));
+        cheeseTexture = new Texture(Gdx.files.internal("assets/testing/test-cheese01.png"));
         floorTexture  = new Texture(Gdx.files.internal("assets/floor.png"));
         winMessage    = new Texture(Gdx.files.internal("assets/winner.png"));
 
@@ -111,6 +114,15 @@ public class GameApp extends Game{
         //
         showStatistics();
 
+        // Проверяем столкновения.
+        //
+        if ( detectCollusions() ) {
+            System.out.println(ANSI.RED + "DETECT");
+            win = true;
+        } else {
+            System.out.println(ANSI.WHITE + "GET OUT");
+            win = false;
+        }
 
 
         // Очиста экрана сплошным цветом и рисование графики при каждой отрисовке.
@@ -120,17 +132,17 @@ public class GameApp extends Game{
 
         // Начало отрисовки упоковщика спрайтов.
         //
-        //-------------------------------------------
+        //-------------------------------------------------------------------------------
         batch.begin();
         batch.draw(floorTexture,0, 0);
         batch.draw(cheeseTexture, cheeseX, cheeseY, 100, 100);
         batch.draw(mouseTexture,   mouseX,  mouseY, 100, 100);
         batch.draw(testTexture, testX, testY);
 
-        if (win) batch.draw(winMessage, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        if (win) batch.draw(winMessage, 640 / 3 , winMessage.getWidth() / 5 );
 
         batch.end();
-        // ------------------------------------------
+        //-------------------------------------------------------------------------------
 
 
 
@@ -157,7 +169,7 @@ public class GameApp extends Game{
 
         // Проверка столкновения с текстурой "сыр"
         //
-        if ( detectCollisions() ) {
+        if ( detectCollusions() ) {
 
             win = true;
             System.out.println("Win");
@@ -207,13 +219,13 @@ public class GameApp extends Game{
      * Проверка столкновений.
      *
      */
-    private boolean detectCollisions() {
+    private boolean detectCollusions() {
 
         return testX >= cheeseX
-                && (testX + testTexture.getWidth() < cheeseX + cheeseTexture.getWidth())
+                && (testX + testTexture.getWidth() <= cheeseX + cheeseTexture.getWidth() * 2)
                 && (testY >= cheeseY)
-                && (testY + testTexture.getHeight() < cheeseY + cheeseTexture.getHeight());
-    } // detectCollisions()
+                && (testY + testTexture.getHeight() <= cheeseY + cheeseTexture.getHeight() * 2);
+    } // detectCollusions()
 
     /** */
     private void showStatistics() {
