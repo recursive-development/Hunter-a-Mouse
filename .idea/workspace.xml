@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd93371e-f936-4b93-b139-6bf7515abfdf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameSprite.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameSprite.java" />
-    </list>
+    <list default="true" id="cd93371e-f936-4b93-b139-6bf7515abfdf" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +18,8 @@
           <file leaf-file-name="GameApp.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="191" column="62" lean-forward="true" selection-start-line="191" selection-start-column="62" selection-end-line="191" selection-end-column="62" />
+                <state relative-caret-position="2064">
+                  <caret line="197" column="44" lean-forward="true" selection-start-line="197" selection-start-column="44" selection-end-line="197" selection-end-column="44" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#GameApp#0" expanded="false" />
@@ -661,8 +656,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="191" column="62" lean-forward="true" selection-start-line="191" selection-start-column="62" selection-end-line="191" selection-end-column="62" />
+        <state relative-caret-position="2064">
+          <caret line="197" column="44" lean-forward="true" selection-start-line="197" selection-start-column="44" selection-end-line="197" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#GameApp#0" expanded="false" />
