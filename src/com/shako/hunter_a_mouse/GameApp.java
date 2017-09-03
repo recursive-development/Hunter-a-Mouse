@@ -23,26 +23,17 @@ public class GameApp extends Game{
     private SpriteBatch batch;
 
     /** */
-    private Texture
-
-            testTexture,
-
-            mouseTexture,
-            floorTexture,
-            cheeseTexture,
-            winMessage;
+    private Texture winMessage;
 
     /** */
     private Sprite
-
             testSprite,
-
             mouseSprite,
-            cheeseSprite;
+            cheeseSprite,
+            floorSprite;
 
     /** */
     private boolean win;
-
 
     // Первичная конфигурация игрового приложения.
     //
@@ -54,49 +45,60 @@ public class GameApp extends Game{
 
     }
 
-    /** */
+    /**
+     * Инициализация игрового приложения.
+     *
+     */
     GameApp() {
 
 
     } // GameApp()
 
-    /** */
+    /**
+     * Инициализация игрового простанстава
+     *
+     */
     @Override
     public void create() {
 
-
         batch = new SpriteBatch();
 
-        winMessage    = new Texture(Gdx.files.internal("assets/winner.png"));
+        winMessage   = new Texture(Gdx.files.internal("assets/winner.png"));
+
+        testSprite   = new TestSprite();
+
+        mouseSprite  = new Mouse();
+        cheeseSprite = new Cheese();
+        floorSprite  = new FloorSprite();
+
     } // create()
 
     @Override
     public void render() {
-        super.render();
+
+        // super.render();
 
         // Перемещение героя игры.
         //
         //moveMouse();
 
-        // Тестирование перемещения посредством тестовой текстуры.
+        // Тестирование перемещения посредством тестового спрайта.
         //
-        //moveTestTexture();
+        moveTestSprite();
 
         // Вывод статистики в консоль.
         //
-        // showStatistics();
+        showStatistics();
 
         // Проверяем столкновения.
         //
-//        if ( detectCollusions() ) {
-//            Gdx.app.log("Collisions", ANSI.GREEN + "DETECT");
-//            win = true;
-//        } else {
-//            Gdx.app.log("Collisions", ANSI.WHITE + "DETECT");
-//            win = false;
-//        }
-
-        Gdx.app.log("Collisions", ANSI.GREEN + "DETECT");
+        if ( detectCollisions() ) {
+            Gdx.app.log("Collisions", ANSI.GREEN + "DETECT");
+            win = true;
+        } else {
+            Gdx.app.log("Collisions", ANSI.WHITE + "DETECT");
+            win = false;
+        }
 
 
         // Очиста экрана сплошным цветом и рисование графики при каждой отрисовке.
@@ -108,42 +110,41 @@ public class GameApp extends Game{
         //
         //-------------------------------------------------------------------------------
         batch.begin();
-        batch.draw(floorTexture,0, 0);
-        //batch.draw(cheeseTexture, cheeseX, cheeseY, 100, 100);
-        //batch.draw(mouseTexture,   mouseX,  mouseY, 100, 100);
-        //batch.draw(testTexture, testX, testY);
+
+        batch.draw(floorSprite.getTexture(),0, 0);
+        batch.draw(cheeseSprite.getTexture(), cheeseSprite.getX(), cheeseSprite.getY(), 100, 100);
+        batch.draw(mouseSprite.getTexture(), mouseSprite.getX(), mouseSprite.getY(), 100, 100);
+        batch.draw(testSprite.getTexture(), testSprite.getX(), testSprite.getY());
 
         if (win) batch.draw(winMessage, 640 / 3 , winMessage.getWidth() / 5 );
 
         batch.end();
         //-------------------------------------------------------------------------------
-
-
-
     } // render()
 
     /**
-     * Пермещение мышки.
+     * Пермещение главного героя - мышонка Моисея.
      *
      */
     private void moveMouse() {
 
+        // Перемещение главного героя.
         //
+        if (Gdx.input.isKeyPressed(Input.Keys.UP))    mouseSprite.setY(mouseSprite.getY() + mouseSprite.getV());
+        if (Gdx.input.isKeyPressed(Input.Keys.DOWN))  mouseSprite.setY(mouseSprite.getY() - mouseSprite.getV());
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) mouseSprite.setX(mouseSprite.getX() + mouseSprite.getV());
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT))  mouseSprite.setX(mouseSprite.getX() - mouseSprite.getV());
+
+        // Ограничение выхода за пределы игрового поля.
         //
-        if (Gdx.input.isKeyPressed(Input.Keys.UP))    mouseY += 5.0f;
-        if (Gdx.input.isKeyPressed(Input.Keys.DOWN))  mouseY -= 5.0f;
-        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) mouseX += 5.0f;
-        if (Gdx.input.isKeyPressed(Input.Keys.LEFT))  mouseX -= 5.0f;
-
-        if( mouseX <= 0 ) mouseX = 0;
-        //if( mouseX >= ...  - mouseTexture.getWidth() ) mouseX = ... - mouseTexture.getWidth();
-
-        if ( mouseY  <= 0 ) mouseY = 0; // mouseTexture.getHeight()
-        //if ( mouseY >= ... - mouseTexture.getHeight() ) mouseY = mouseTexture.getHeight();
+        if ( mouseSprite.getX() <= 0 ) mouseSprite.setX(0.0f);
+        if ( mouseSprite.getX() >= 640 - mouseSprite.getWidth() ) mouseSprite.setX( 640 - mouseSprite.getWidth() );
+        if ( mouseSprite.getY() <= 0 ) mouseSprite.setY(0.0f);
+        if ( mouseSprite.getY() >= 480 - mouseSprite.getHeight() ) mouseSprite.setY( 480 - mouseSprite.getHeight() );
 
         // Проверка столкновения с текстурой "сыр"
         //
-        if ( detectCollusions() ) {
+        if ( detectCollisions() ) {
 
             win = true;
             System.out.println("Win");
@@ -152,60 +153,60 @@ public class GameApp extends Game{
     } // moveMouse()
 
     /**
-     * Тестовое перемещение тестовой тектуры.
+     * Тестирование перемещения тестового спрайта.
      *
      */
-    private void moveTestTexture() {
+    private void moveTestSprite() {
 
         // Увеличение / уменьшение скорости перемещения и
         // ограничение на изменение скорости.
         //
-        if ( Gdx.input.isKeyPressed( Input.Keys.MINUS ) ) testVelosity--;
-        if (  testVelosity <= 0 ) testVelosity = 0.5f;
+        if ( Gdx.input.isKeyPressed( Input.Keys.MINUS ) ) testSprite.setV(testSprite.getV() - 1);
+        if (  testSprite.getV() <= 0 ) testSprite.setV(0.5f);
 
-        if ( Gdx.input.isKeyPressed( Input.Keys.PLUS  ) ) testVelosity++;
-        if ( testVelosity >= 100.0f ) testVelosity = 100.0f;
+        if ( Gdx.input.isKeyPressed( Input.Keys.PLUS  ) ) testSprite.setV(testSprite.getV() + 1);
+        if ( testSprite.getV() >= 100.0f ) testSprite.setV(100.0f);
 
-        // Перемещение по игровой области.
+        // Перемещение тестового спрайта по игровой области.
         //
-        if (Gdx.input.isKeyPressed(Input.Keys.UP))    testY += testVelosity;
-        if (Gdx.input.isKeyPressed(Input.Keys.DOWN))  testY -= testVelosity;
-        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) testX += testVelosity;
-        if (Gdx.input.isKeyPressed(Input.Keys.LEFT))  testX -= testVelosity;
+        if (Gdx.input.isKeyPressed(Input.Keys.UP))    testSprite.setY(testSprite.getY() + testSprite.getV());
+        if (Gdx.input.isKeyPressed(Input.Keys.DOWN))  testSprite.setY(testSprite.getY() - testSprite.getV());
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) testSprite.setX(testSprite.getX() + testSprite.getV());
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT))  testSprite.setX(testSprite.getX() - testSprite.getV());
 
-        if( testX <= 0 ) testX = 0;
-        if( testX >= 640 - testTexture.getWidth() ) testX = 640 - testTexture.getWidth();
-
-        if ( testY  <= 0 ) testY = 0; // mouseTexture.getHeight()
-        if ( testY >= 480 - testTexture.getHeight() ) testY = 480 - testTexture.getHeight();
-
-        // Столкновение с текстурой сыра
+        // Ограничение перемещения тестового спрайта размерами экрана (игровой области).
         //
-        // if (mouseX >= cheeseX && ( mouseX + mouseTexture.getWidth()  < cheeseX + cheeseTexture.getWidth() )
-        //         && ( mouseY >= cheeseY ) && ( mouseY + mouseTexture.getHeight() < cheeseY + cheeseTexture.getHeight() ))
-        // {
-        //     win = true;
-        //     System.out.println("Win");
-        // }
-    }
+        if( testSprite.getX() <= 0 ) testSprite.setX(0.0f);
+        if( testSprite.getX() >= 640 - testSprite.getWidth() ) testSprite.setX(640 - testSprite.getWidth());
+
+        if ( testSprite.getY() <= 0 ) testSprite.setY(0.0f);
+        if ( testSprite.getY() >= 480 - testSprite.getHeight() ) testSprite.setX(480 - testSprite.getHeight());
+    } // moveTestSprite()
 
     /**
      * Проверка столкновений.
      *
+     * тестовы спрайт + сыр ...
+     *
      */
-    private boolean detectCollusions() {
+    private boolean detectCollisions() {
 
-        return testX >= cheeseX
-                && (testX + testTexture.getWidth() <= cheeseX + cheeseTexture.getWidth() * 2)
-                && (testY >= cheeseY)
-                && (testY + testTexture.getHeight() <= cheeseY + cheeseTexture.getHeight() * 2);
-    } // detectCollusions()
+        return testSprite.getX() >= cheeseSprite.getX()
+                && (testSprite.getX() + testSprite.getWidth() <= cheeseSprite.getX() + cheeseSprite.getWidth() * 2)
+                && (testSprite.getY() >= cheeseSprite.getY())
+                && (testSprite.getY() + testSprite.getHeight() <= cheeseSprite.getY() + cheeseSprite.getHeight() * 2);
+    } // detectCollisions()
 
-    /** */
+    /**
+     * Вывод статистики в системную консоль.
+     *
+     */
     private void showStatistics() {
-
-        System.out.printf("test [%.1f][%.1f]:[%.1f]\n", testX, testY, testVelosity);
-
+        System.out.printf(
+                ANSI.BACKGROUND_BLUE + "test [%.1f][%.1f]:[%.1f]\n",
+                testSprite.getX(),
+                testSprite.getY(),
+                testSprite.getV());
     } // showStatistics()
 } // GameApp
 

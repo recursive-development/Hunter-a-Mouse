@@ -4,6 +4,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 
 /**
+ * Тестовый спрайт.
+ *
  * @author Timur Kashapov aka shako.
  * @since 1.0
  * 03-Sep-17
@@ -19,4 +21,8 @@ public class TestSprite extends GameSprite {
 
     } // testSprite()
 
+    @Override
+    public Texture getTexture() {
+        return this.texture;
+    }
 } // TestSprite
