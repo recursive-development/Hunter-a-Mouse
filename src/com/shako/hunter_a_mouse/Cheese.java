@@ -13,7 +13,7 @@ import com.badlogic.gdx.graphics.Texture;
 public class Cheese extends GameSprite {
 
     /** */
-    private Texture texture = new Texture(Gdx.files.internal("assets\\cheese01.png"));
+    private Texture texture = new Texture(Gdx.files.internal("assets\\testing\\test-cheese01.png"));
 
     /** */
     public Cheese() {

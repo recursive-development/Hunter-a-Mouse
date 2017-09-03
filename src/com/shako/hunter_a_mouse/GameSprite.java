@@ -31,24 +31,28 @@ public class GameSprite extends Sprite {
         this.acceleration = 0.0f;
         this.mass         = 0.0f;
         this.power        = 0.0f;
+
     } // GameSprite()
 
-
+    /** */
     @Override
     public float getX() {
         return x;
     }
 
+    /** */
     @Override
     public void setX(float x) {
         this.x = x;
     }
 
+    /** */
     @Override
     public float getY() {
         return y;
     }
 
+    /** */
     @Override
     public void setY(float y) {
         this.y = y;
