@@ -24,4 +24,9 @@ public class Mouse extends GameSprite {
         setV(5.0f);
 
     } // Mouse()
+
+    @Override
+    public Texture getTexture() {
+        return this.texture;
+    }
 } // Mouse
