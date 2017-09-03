@@ -25,4 +25,8 @@ public class Cheese extends GameSprite {
 
     } // Cheese()
 
+    @Override
+    public Texture getTexture() {
+        return this.texture;
+    }
 } // Cheese

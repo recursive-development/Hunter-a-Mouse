@@ -25,4 +25,8 @@ public class FloorSprite extends GameSprite {
 
     } // FloorSprite()
 
+    @Override
+    public Texture getTexture() {
+        return this.texture;
+    }
 } // FloorSprite
