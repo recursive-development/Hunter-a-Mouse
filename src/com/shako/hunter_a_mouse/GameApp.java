@@ -136,7 +136,10 @@ public class GameApp extends Game{
 
     } // render()
 
-    /** */
+    /**
+     * Пермещение мышки.
+     *
+     */
     private void moveMouse() {
 
         //
@@ -152,20 +155,24 @@ public class GameApp extends Game{
         if ( mouseY  <= 0 ) mouseY = 0; // mouseTexture.getHeight()
         //if ( mouseY >= ... - mouseTexture.getHeight() ) mouseY = mouseTexture.getHeight();
 
-        // Столкновение с текстурой сыра
+        // Проверка столкновения с текстурой "сыр"
         //
-        if (mouseX >= cheeseX && ( mouseX + mouseTexture.getWidth()  < cheeseX + cheeseTexture.getWidth() )
-                && ( mouseY >= cheeseY ) && ( mouseY + mouseTexture.getHeight() < cheeseY + cheeseTexture.getHeight() ))
-        {
+        if ( detectCollisions() ) {
+
             win = true;
             System.out.println("Win");
         }
+
     } // moveMouse()
 
-    /** */
+    /**
+     * Тестовое перемещение тестовой тектуры.
+     *
+     */
     private void moveTestTexture() {
 
-        //
+        // Увеличение / уменьшение скорости перемещения и
+        // ограничение на изменение скорости.
         //
         if ( Gdx.input.isKeyPressed( Input.Keys.MINUS ) ) testVelosity--;
         if (  testVelosity <= 0 ) testVelosity = 0.5f;
@@ -173,7 +180,7 @@ public class GameApp extends Game{
         if ( Gdx.input.isKeyPressed( Input.Keys.PLUS  ) ) testVelosity++;
         if ( testVelosity >= 100.0f ) testVelosity = 100.0f;
 
-        //
+        // Перемещение по игровой области.
         //
         if (Gdx.input.isKeyPressed(Input.Keys.UP))    testY += testVelosity;
         if (Gdx.input.isKeyPressed(Input.Keys.DOWN))  testY -= testVelosity;
@@ -196,10 +203,22 @@ public class GameApp extends Game{
         // }
     }
 
+    /**
+     * Проверка столкновений.
+     *
+     */
+    private boolean detectCollisions() {
+
+        return testX >= cheeseX
+                && (testX + testTexture.getWidth() < cheeseX + cheeseTexture.getWidth())
+                && (testY >= cheeseY)
+                && (testY + testTexture.getHeight() < cheeseY + cheeseTexture.getHeight());
+    } // detectCollisions()
+
     /** */
     private void showStatistics() {
 
-        System.out.printf("test [%.1f][%.1f]:[%.1jrf]\n", testX, testY, testVelosity);
+        System.out.printf("test [%.1f][%.1f]:[%.1f]\n", testX, testY, testVelosity);
 
     } // showStatistics()
 } // GameApp
