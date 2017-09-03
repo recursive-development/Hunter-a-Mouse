@@ -11,5 +11,6 @@
     <orderEntry type="library" name="gdx-backend-lwjgl" level="project" />
     <orderEntry type="library" name="gdx-natives" level="project" />
     <orderEntry type="library" name="gdx-backend-lwjgl-natives" level="project" />
+    <orderEntry type="library" name="jcli" level="project" />
   </component>
 </module>
