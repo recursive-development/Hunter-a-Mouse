@@ -117,7 +117,7 @@ public class GameApp extends Game{
         // Проверяем столкновения.
         //
         if ( detectCollusions() ) {
-            System.out.println(ANSI.RED + "DETECT");
+            System.out.println(ANSI.GREEN + "DETECT");
             win = true;
         } else {
             System.out.println(ANSI.WHITE + "GET OUT");
