@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd93371e-f936-4b93-b139-6bf7515abfdf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/FloorSprite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameSprite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Mouse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/FloorSprite.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/FloorSprite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Mouse.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Mouse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,30 +19,25 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.37218288">
+    <splitter split-orientation="horizontal" split-proportion="0.60384154">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GameApp.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="GameApp.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1190">
-                  <caret line="111" column="64" lean-forward="false" selection-start-line="111" selection-start-column="64" selection-end-line="111" selection-end-column="64" />
+                <state relative-caret-position="155">
+                  <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#GameApp#0" expanded="false" />
                     <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
                     <element signature="method#create#0;class#GameApp#0" expanded="false" />
+                    <element signature="method#render#0;class#GameApp#0" expanded="false" />
+                    <element signature="method#moveMouse#0;class#GameApp#0" expanded="false" />
+                    <element signature="method#moveTestSprite#0;class#GameApp#0" expanded="false" />
+                    <element signature="method#detectCollisions#0;class#GameApp#0" expanded="false" />
+                    <element signature="method#showStatistics#0;class#GameApp#0" expanded="false" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GameLauncher.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameLauncher.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -51,45 +45,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GameApp.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="52" column="41" lean-forward="false" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="docComment;class#GameApp#0" expanded="false" />
-                    <element signature="docComment;method#moveMouse#0;class#GameApp#0" expanded="false" />
-                    <element signature="method#moveMouse#0;class#GameApp#0" expanded="false" />
-                    <element signature="docComment;method#moveTestTexture#0;class#GameApp#0" expanded="false" />
-                    <element signature="method#moveTestTexture#0;class#GameApp#0" expanded="false" />
-                    <element signature="docComment;method#detectCollusions#0;class#GameApp#0" expanded="false" />
-                    <element signature="method#detectCollusions#0;class#GameApp#0" expanded="false" />
-                    <element signature="method#showStatistics#0;class#GameApp#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FloorSprite.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/FloorSprite.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#FloorSprite#0;class#FloorSprite#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GameSprite.java" pinned="false" current-in-tab="false">
+        <leaf>
+          <file leaf-file-name="GameSprite.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameSprite.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+                <state relative-caret-position="340">
+                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#GameSprite#0;class#GameSprite#0" expanded="false" />
@@ -98,26 +59,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TestSprite.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java">
+          <file leaf-file-name="FloorSprite.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/FloorSprite.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="79" lean-forward="false" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
+                <state relative-caret-position="357">
+                  <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Mouse.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Mouse.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#Mouse#0;class#Mouse#0" expanded="false" />
+                    <element signature="method#FloorSprite#0;class#FloorSprite#0" expanded="false" />
+                    <element signature="e#500#501#0" expanded="true" />
+                    <element signature="e#535#536#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -127,10 +78,38 @@
             <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="357">
-                  <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                  <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#Cheese#0;class#Cheese#0" expanded="false" />
+                    <element signature="e#505#506#0" expanded="true" />
+                    <element signature="e#540#541#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TestSprite.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#TestSprite#0;class#TestSprite#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Mouse.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Mouse.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#Mouse#0;class#Mouse#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -162,20 +141,20 @@
         <option value="$PROJECT_DIR$/src/GameApp.java" />
         <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/package-info.java" />
         <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameLauncher.java" />
-        <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java" />
         <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameSprite.java" />
-        <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Mouse.java" />
         <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/FloorSprite.java" />
+        <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Mouse.java" />
+        <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java" />
         <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java" />
         <option value="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-246" />
-    <option name="y" value="-1079" />
-    <option name="width" value="1918" />
-    <option name="height" value="1078" />
+    <option name="x" value="-255" />
+    <option name="y" value="-1088" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -192,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -240,7 +220,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,12 +402,11 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-246" y="-1079" width="1918" height="1078" extended-state="0" />
+    <frame x="-255" y="-1088" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -437,12 +415,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12970936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102345414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -455,108 +434,80 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java</url>
+          <line>191</line>
+          <properties class="com.shako.hunter_a_mouse.GameApp" method="detectCollisions">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="85">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="62" lean-forward="false" selection-start-line="105" selection-start-column="62" selection-end-line="105" selection-end-column="62" />
+        <state relative-caret-position="1887">
+          <caret line="111" column="64" lean-forward="false" selection-start-line="111" selection-start-column="64" selection-end-line="111" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#GameApp#0" expanded="false" />
-            <element signature="docComment;method#moveMouse#0;class#GameApp#0" expanded="false" />
+            <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
+            <element signature="method#create#0;class#GameApp#0" expanded="false" />
+            <element signature="method#render#0;class#GameApp#0" expanded="false" />
             <element signature="method#moveMouse#0;class#GameApp#0" expanded="false" />
-            <element signature="docComment;method#moveTestTexture#0;class#GameApp#0" expanded="false" />
-            <element signature="method#moveTestTexture#0;class#GameApp#0" expanded="false" />
-            <element signature="docComment;method#detectCollusions#0;class#GameApp#0" expanded="false" />
-            <element signature="method#detectCollusions#0;class#GameApp#0" expanded="false" />
+            <element signature="method#moveTestSprite#0;class#GameApp#0" expanded="false" />
+            <element signature="method#detectCollisions#0;class#GameApp#0" expanded="false" />
             <element signature="method#showStatistics#0;class#GameApp#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/libgdx/gdx.jar!/com/badlogic/gdx/Application.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Cheese#0;class#Cheese#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="79" lean-forward="false" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/libgdx/gdx.jar!/com/badlogic/gdx/graphics/g2d/Sprite.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameSprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#GameSprite#0;class#GameSprite#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/FloorSprite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="136">
           <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#FloorSprite#0;class#FloorSprite#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameSprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#GameSprite#0;class#GameSprite#0" expanded="false" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="79" lean-forward="false" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestSprite#0;class#TestSprite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -572,19 +523,147 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Cheese#0;class#Cheese#0" expanded="false" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="52" column="41" lean-forward="false" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        <state relative-caret-position="1785">
+          <caret line="105" column="62" lean-forward="false" selection-start-line="105" selection-start-column="62" selection-end-line="105" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#GameApp#0" expanded="false" />
-            <element signature="docComment;method#moveMouse#0;class#GameApp#0" expanded="false" />
+            <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
+            <element signature="method#create#0;class#GameApp#0" expanded="false" />
+            <element signature="method#render#0;class#GameApp#0" expanded="false" />
             <element signature="method#moveMouse#0;class#GameApp#0" expanded="false" />
-            <element signature="docComment;method#moveTestTexture#0;class#GameApp#0" expanded="false" />
-            <element signature="method#moveTestTexture#0;class#GameApp#0" expanded="false" />
-            <element signature="docComment;method#detectCollusions#0;class#GameApp#0" expanded="false" />
-            <element signature="method#detectCollusions#0;class#GameApp#0" expanded="false" />
+            <element signature="method#moveTestSprite#0;class#GameApp#0" expanded="false" />
+            <element signature="method#detectCollisions#0;class#GameApp#0" expanded="false" />
+            <element signature="method#showStatistics#0;class#GameApp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/libgdx/gdx.jar!/com/badlogic/gdx/Application.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/libgdx/gdx.jar!/com/badlogic/gdx/graphics/g2d/Sprite.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/TestSprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestSprite#0;class#TestSprite#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Mouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Mouse#0;class#Mouse#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/Cheese.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Cheese#0;class#Cheese#0" expanded="false" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/FloorSprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FloorSprite#0;class#FloorSprite#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameSprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#GameSprite#0;class#GameSprite#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#GameApp#0" expanded="false" />
+            <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
+            <element signature="method#create#0;class#GameApp#0" expanded="false" />
+            <element signature="method#render#0;class#GameApp#0" expanded="false" />
+            <element signature="method#moveMouse#0;class#GameApp#0" expanded="false" />
+            <element signature="method#moveTestSprite#0;class#GameApp#0" expanded="false" />
+            <element signature="method#detectCollisions#0;class#GameApp#0" expanded="false" />
             <element signature="method#showStatistics#0;class#GameApp#0" expanded="false" />
           </folding>
         </state>
