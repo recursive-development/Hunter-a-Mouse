@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd93371e-f936-4b93-b139-6bf7515abfdf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" afterPath="$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,14 +49,16 @@
           <file leaf-file-name="GameApp.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+                <state relative-caret-position="34">
+                  <caret line="139" column="24" lean-forward="false" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#GameApp#0" expanded="false" />
                     <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
-                    <element signature="method#moveMouse#0;class#GameApp#0" expanded="false" />
+                    <element signature="method#create#0;class#GameApp#0" expanded="false" />
+                    <element signature="docComment;method#moveTestTexture#0;class#GameApp#0" expanded="false" />
                     <element signature="method#moveTestTexture#0;class#GameApp#0" expanded="false" />
+                    <element signature="docComment;method#detectCollisions#0;class#GameApp#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -354,13 +355,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java</url>
-          <line>99</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -382,8 +376,10 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#GameApp#0" expanded="false" />
             <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
-            <element signature="method#moveMouse#0;class#GameApp#0" expanded="false" />
+            <element signature="method#create#0;class#GameApp#0" expanded="false" />
+            <element signature="docComment;method#moveTestTexture#0;class#GameApp#0" expanded="false" />
             <element signature="method#moveTestTexture#0;class#GameApp#0" expanded="false" />
+            <element signature="docComment;method#detectCollisions#0;class#GameApp#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -406,14 +402,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shako/hunter_a_mouse/GameApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="139" column="24" lean-forward="false" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#GameApp#0" expanded="false" />
             <element signature="method#GameApp#0;class#GameApp#0" expanded="false" />
-            <element signature="method#moveMouse#0;class#GameApp#0" expanded="false" />
+            <element signature="method#create#0;class#GameApp#0" expanded="false" />
+            <element signature="docComment;method#moveTestTexture#0;class#GameApp#0" expanded="false" />
             <element signature="method#moveTestTexture#0;class#GameApp#0" expanded="false" />
+            <element signature="docComment;method#detectCollisions#0;class#GameApp#0" expanded="false" />
           </folding>
         </state>
       </provider>
