@@ -90,7 +90,7 @@ public class GameApp extends Game{
             Gdx.app.log("Collisions", ANSI.GREEN + "DETECT");
             win = true;
         } else {
-            Gdx.app.log("Collisions", ANSI.WHITE + "DETECT");
+            Gdx.app.log("Collisions", ANSI.BLUE + "GET OUT");
             win = false;
         }
 
@@ -155,10 +155,10 @@ public class GameApp extends Game{
         // Увеличение / уменьшение скорости перемещения и
         // ограничение на изменение скорости.
         //
-        if ( Gdx.input.isKeyPressed( Input.Keys.MINUS ) ) testSprite.setV(testSprite.getV() - 1);
-        if (  testSprite.getV() <= 0 ) testSprite.setV(0.5f);
+        if ( Gdx.input.isKeyPressed( Input.Keys.MINUS ) ) testSprite.setV(testSprite.getV() - 0.5f);
+        if (  testSprite.getV() <= 0.0f ) testSprite.setV(0.5f);
 
-        if ( Gdx.input.isKeyPressed( Input.Keys.PLUS  ) ) testSprite.setV(testSprite.getV() + 1);
+        if ( Gdx.input.isKeyPressed( Input.Keys.PLUS  ) ) testSprite.setV(testSprite.getV() + 0.5f);
         if ( testSprite.getV() >= 100.0f ) testSprite.setV(100.0f);
 
         // Перемещение тестового спрайта по игровой области.
@@ -171,10 +171,13 @@ public class GameApp extends Game{
         // Ограничение перемещения тестового спрайта размерами экрана (игровой области).
         //
         if( testSprite.getX() <= 0 ) testSprite.setX(0.0f);
-        if( testSprite.getX() >= 640 - testSprite.getWidth() ) testSprite.setX(640 - testSprite.getWidth());
-
+        if( testSprite.getX() >= 640 - testSprite.getTexture().getWidth() ) {
+            testSprite.setX(640 - testSprite.getTexture().getWidth());
+        }
         if ( testSprite.getY() <= 0 ) testSprite.setY(0.0f);
-        if ( testSprite.getY() >= 480 - testSprite.getHeight() ) testSprite.setX(480 - testSprite.getHeight());
+        if ( testSprite.getY() >= 480 - testSprite.getTexture().getHeight() ) {
+            testSprite.setY(480 - testSprite.getTexture().getHeight());
+        }
     } // moveTestSprite()
 
     /**
@@ -186,9 +189,9 @@ public class GameApp extends Game{
     private boolean detectCollisions() {
 
         return testSprite.getX() >= cheeseSprite.getX()
-                && (testSprite.getX() + testSprite.getWidth() <= cheeseSprite.getX() + cheeseSprite.getWidth() * 2)
+                && (testSprite.getX() + testSprite.getTexture().getWidth() <= cheeseSprite.getX() + cheeseSprite.getTexture().getWidth() * 1.2f)
                 && (testSprite.getY() >= cheeseSprite.getY())
-                && (testSprite.getY() + testSprite.getHeight() <= cheeseSprite.getY() + cheeseSprite.getHeight() * 2);
+                && (testSprite.getY() + testSprite.getTexture().getHeight() <= cheeseSprite.getY() + cheeseSprite.getTexture().getHeight() * 1.2f);
     } // detectCollisions()
 
     /**
@@ -197,7 +200,7 @@ public class GameApp extends Game{
      */
     private void showStatistics() {
         System.out.printf(
-                ANSI.BACKGROUND_BLUE + "test [%.1f][%.1f]:[%.1f]\n",
+                ANSI.WHITE + "test [%.1f][%.1f]:[%.1f]\n",
                 testSprite.getX(),
                 testSprite.getY(),
                 testSprite.getV());
