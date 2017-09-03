@@ -35,16 +35,6 @@ public class GameApp extends Game{
     /** */
     private boolean win;
 
-    // Первичная конфигурация игрового приложения.
-    //
-    static {
-
-        // Отмена изменения размеров окна экрана игрового приложения.
-        //
-        Gdx.graphics.setResizable(false);
-
-    }
-
     /**
      * Инициализация игрового приложения.
      *
@@ -60,6 +50,10 @@ public class GameApp extends Game{
      */
     @Override
     public void create() {
+
+        // Отмена изменения размеров окна экрана игрового приложения.
+        //
+        Gdx.graphics.setResizable(false);
 
         batch = new SpriteBatch();
 
