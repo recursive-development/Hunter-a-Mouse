@@ -35,6 +35,12 @@ public class GameApp extends Game{
     /** */
     private boolean win;
 
+    // Заргузка низкоуровневых библиотек С/С++.
+    //
+    static {
+        System.loadLibrary("GameAppNative");
+    }
+
     /**
      * Инициализация игрового приложения.
      *
@@ -45,7 +51,7 @@ public class GameApp extends Game{
     } // GameApp()
 
     /**
-     * Инициализация игрового простанстава
+     * Инициализация игрового пространства.
      *
      */
     @Override
@@ -67,6 +73,10 @@ public class GameApp extends Game{
 
     } // create()
 
+    /**
+     * Отрисовка графики.
+     *
+     */
     @Override
     public void render() {
 
@@ -205,6 +215,9 @@ public class GameApp extends Game{
                 testSprite.getY(),
                 testSprite.getV());
     } // showStatistics()
+
+     /** */
+     private native void showNativeStatistics();
 } // GameApp
 
 
