@@ -12,5 +12,7 @@
     <orderEntry type="library" name="gdx-natives" level="project" />
     <orderEntry type="library" name="gdx-backend-lwjgl-natives" level="project" />
     <orderEntry type="library" name="jcli" level="project" />
+    <orderEntry type="library" name="R User Library" level="project" />
+    <orderEntry type="library" name="R Skeletons" level="application" />
   </component>
 </module>
